@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude/
+.DS_Store
+
+# runtime state, not source
+*.db
+*.db-wal
+*.db-shm
+
+# training checkpoint; the exported model.onnx is what the service uses
+artifacts/*.pt
+
+# onnxruntime drops a telemetry session-id file here on some platforms
+:memory:.ses
+
+# local working notes, not part of the submission
+PLAN.md
+CONCEPTS.md

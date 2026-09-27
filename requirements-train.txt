@@ -1,0 +1,7 @@
+# Training dependencies. Used once, on a developer machine with network access.
+# The deployed service never installs these.
+-r requirements.txt
+torch==2.14.0
+torchvision==0.29.0
+onnx==1.23.0
+onnxscript==0.7.2
