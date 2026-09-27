@@ -1,0 +1,96 @@
+{
+  "model_id": "resnet18-eurosat@c9b3a21bf799",
+  "eval_tiles": 210,
+  "accuracy": 0.9619,
+  "per_class_recall": {
+    "AnnualCrop": 0.9667,
+    "Forest": 0.9667,
+    "Highway": 1.0,
+    "Industrial": 0.9667,
+    "Residential": 1.0,
+    "River": 0.9,
+    "SeaLake": 0.9333
+  },
+  "confusion_matrix": {
+    "labels": [
+      "AnnualCrop",
+      "Forest",
+      "Highway",
+      "Industrial",
+      "Residential",
+      "River",
+      "SeaLake"
+    ],
+    "rows_are_truth": [
+      [
+        29,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        29,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        27,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        28
+      ]
+    ]
+  },
+  "threshold": 0.8,
+  "accepted_count": 193,
+  "accepted_accuracy": 0.9948,
+  "needs_review_count": 17,
+  "needs_review_accuracy": 0.5882,
+  "share_of_errors_flagged": 0.875
+}
